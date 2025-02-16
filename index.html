@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Cards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 style="color: black;">Pokémon Card Generator</h1>
+    <div class="form-container">
+        <input type="number" id="numPokemon" placeholder="Enter number of Pokémon" >
+        <select id="category">
+            <option value="fire">Fire</option>
+            <option value="water">Water</option>
+            <option value="grass">Grass</option>
+            <option value="electric">Electric</option>
+            <option value="psychic">Psychic</option>
+            <option value="normal">Normal</option>
+            <option value="fighting">Fighting</option>
+        </select>
+        <button onclick="fetchPokemon()">Get Pokémon</button>
+    </div>
+    
+    <div id="pokemonContainer" class="card-container">
+        
+            <div id="loading" style="display:none;">
+                <p>Loading...</p>
+                <!-- You can add a spinner or an animated icon here -->
+            </div>
+        
+        
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
